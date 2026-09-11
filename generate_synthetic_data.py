@@ -6,8 +6,8 @@ import numpy as np
 import pandas as pd
 
 
-ROOT = Path(__file__).resolve().parents[1]
-OUTPUT = ROOT / "data" / "municipal_survey_synthetic.csv"
+ROOT = Path(__file__).resolve().parent
+OUTPUT = ROOT / "municipal_survey_synthetic.csv"
 SEED = 42
 N_RESPONDENTS = 750
 
@@ -87,4 +87,3 @@ def main() -> None:
 
 if __name__ == "__main__":
     main()
-

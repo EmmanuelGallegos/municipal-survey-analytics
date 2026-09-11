@@ -18,9 +18,9 @@ from sklearn.pipeline import Pipeline
 from sklearn.preprocessing import StandardScaler
 
 
-ROOT = Path(__file__).resolve().parents[1]
-DATA_PATH = ROOT / "data" / "municipal_survey_synthetic.csv"
-REPORTS = ROOT / "reports"
+ROOT = Path(__file__).resolve().parent
+DATA_PATH = ROOT / "municipal_survey_synthetic.csv"
+REPORTS = ROOT
 TARGET = "overall_satisfaction"
 FEATURES = [
     "water_reliability",
@@ -139,4 +139,3 @@ def main() -> None:
 
 if __name__ == "__main__":
     main()
-

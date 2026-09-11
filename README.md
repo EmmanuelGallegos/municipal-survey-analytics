@@ -42,6 +42,38 @@ municipal-survey-analytics/
 - Feature-importance reporting from standardized coefficients
 - Export of charts and summary metrics
 
+## Results
+
+The model was evaluated on 188 held-out synthetic responses (25% of the dataset).
+
+| Metric | Result | Interpretation |
+| --- | ---: | --- |
+| Mean absolute error (MAE) | 0.4489 | Predictions differ from the 1–5 satisfaction score by about 0.45 points on average. |
+| R-squared | 0.4607 | The service ratings explain about 46% of the variation in overall satisfaction in the synthetic test data. |
+| First PCA component | 30.6% | The strongest latent dimension captures a broad municipal infrastructure and service-quality pattern. |
+| First three components | 57.5% | Three components summarize over half of the standardized survey variation. |
+
+The largest standardized regression coefficients were:
+
+1. **Water reliability (0.2810)** — the strongest predictor of overall satisfaction.
+2. **Waste collection (0.1935)** — the second-largest association.
+3. **Drainage maintenance (0.1819)** and **street condition (0.1817)** — nearly equal contributions.
+4. **Daytime safety (0.1061)** — a smaller but positive association after controlling for other ratings.
+
+These results illustrate the complete analytical workflow. Because the data are synthetic, they should not be interpreted as findings about a real municipality.
+
+### Correlation structure
+
+![Correlation heatmap](correlation_heatmap.png)
+
+### Dimensionality reduction
+
+![PCA explained variance](pca_explained_variance.png)
+
+### Predictive performance
+
+![Predicted versus actual satisfaction](predicted_vs_actual.png)
+
 ## Quick start
 
 ```bash

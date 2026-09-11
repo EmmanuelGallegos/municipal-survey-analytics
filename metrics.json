@@ -1,0 +1,21 @@
+{
+  "rows": 750,
+  "synthetic_data": true,
+  "pc_1_explained_variance": 0.306,
+  "pc_2_explained_variance": 0.1405,
+  "pc_3_explained_variance": 0.1281,
+  "test_rows": 188,
+  "mae": 0.4489,
+  "r2": 0.4607,
+  "standardized_coefficients": {
+    "water_reliability": 0.281,
+    "waste_collection": 0.1935,
+    "drainage_maintenance": 0.1819,
+    "street_condition": 0.1817,
+    "daytime_safety": 0.1061,
+    "public_lighting": 0.0665,
+    "police_trust": 0.0463,
+    "nighttime_safety": -0.0245,
+    "green_area_maintenance": 0.0029
+  }
+}
